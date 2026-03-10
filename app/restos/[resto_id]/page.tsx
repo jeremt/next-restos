@@ -1,4 +1,5 @@
 import {getRestoById} from "@/lib/data/restos";
+import {AddRating} from "./AddRating";
 
 type Props = {params: Promise<{resto_id: string}>};
 
@@ -8,5 +9,11 @@ export default async function Page({params}: Props) {
     if (resto === undefined) {
         return <div>Resto not found</div>;
     }
-    return <div>TODO: resto {resto.titre}</div>;
+
+    return (
+        <div>
+            <h1>{resto.titre}</h1>
+            <AddRating />
+        </div>
+    );
 }

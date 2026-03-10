@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export default function Page() {
     const restos = listRestos();
+
     return (
         <div className="p-4">
             <h1 className="text-center text-2xl">Restos</h1>
