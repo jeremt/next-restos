@@ -272,3 +272,8 @@ export const listRestos = () => {
         };
     });
 };
+
+export const getRestoById = (id: string) =>
+    data.restaurants.find((resto) => {
+        return resto.id === id;
+    });
