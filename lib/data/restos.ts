@@ -1,7 +1,7 @@
 const data = {
     restaurants: [
         {
-            id: crypto.randomUUID(),
+            id: 1,
             titre: "Le Jardin Vert",
             description:
                 "Restaurant entièrement végétalien proposant des plats créatifs à base de produits locaux et de saison. Une cuisine saine et savoureuse dans un cadre chaleureux.",
@@ -18,7 +18,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 2,
             titre: "Pho Saigon",
             description:
                 "Authentique restaurant vietnamien tenu par une famille depuis 1998. Spécialiste du pho traditionnel et des rouleaux de printemps faits maison.",
@@ -31,7 +31,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 3,
             titre: "Trattoria da Enzo",
             description:
                 "Cuisine italienne traditionnelle importée directement de Naples. Pâtes fraîches, pizzas au feu de bois et tiramisu fait maison à tomber par terre.",
@@ -52,7 +52,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 4,
             titre: "Sushi Zen",
             description:
                 "Restaurant japonais haut de gamme proposant des sushis préparés à la minute par un chef formé à Tokyo. Ambiance épurée et service impeccable.",
@@ -65,7 +65,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 5,
             titre: "El Rancho",
             description:
                 "Steakhouse mexicain convivial avec une carte de tacos, burritos et grillades généreuses. Ambiance festive et grande sélection de margaritas.",
@@ -82,7 +82,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 6,
             titre: "Le Comptoir Libanais",
             description:
                 "Saveurs du Liban dans une ambiance colorée et décontractée. Mezze généreux, falafels croustillants et houmous onctueux à partager entre amis.",
@@ -99,7 +99,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 7,
             titre: "Brasserie Alsacienne",
             description:
                 "Institution parisienne fondée en 1923 spécialisée dans la cuisine alsacienne. Choucroute royale, flamekueche et bière pression artisanale dans un décor Belle Époque.",
@@ -124,7 +124,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 8,
             titre: "Curry Palace",
             description:
                 "Restaurant indien authentique proposant une grande variété de currys végétariens et non-végétariens. Épices importées directement du Kerala.",
@@ -137,7 +137,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 9,
             titre: "Burger Factory",
             description:
                 "Burgers artisanaux avec des steaks de bœuf limousin, des pains briochés maison et des sauces secrètes. Ambiance street-food chic dans un loft industriel.",
@@ -154,7 +154,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 10,
             titre: "La Crêperie Bretonne",
             description:
                 "Crêperie traditionnelle bretonne avec des galettes de sarrasin bio et des crêpes sucrées. Cidre artisanal et ambiance authentique de Finistère.",
@@ -171,7 +171,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 11,
             titre: "Ramen Tokyo",
             description:
                 "Spécialiste du ramen tonkotsu avec un bouillon mijoté 18 heures. File d'attente inévitable mais l'expérience est unique. Gyozas et edamames en entrée.",
@@ -184,7 +184,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 12,
             titre: "Le Bistrot du Marché",
             description:
                 "Bistrot parisien de quartier avec une carte courte qui change chaque semaine selon les arrivages du marché. Vins naturels et ambiance canaille garantis.",
@@ -201,7 +201,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 13,
             titre: "Ethiopian Coffee & Kitchen",
             description:
                 "Premier restaurant éthiopien du quartier, proposant des injeras garnis de wats savoureux. Café de cérémonie éthiopien servi avec des pop-corns selon la tradition.",
@@ -218,7 +218,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 14,
             titre: "Tapas y Mas",
             description:
                 "Bar à tapas animé inspiré des tabernas de Barcelone. Patatas bravas, jambon ibérique, croquetas et sangria dans une atmosphère festive.",
@@ -239,7 +239,7 @@ const data = {
             ],
         },
         {
-            id: crypto.randomUUID(),
+            id: 15,
             titre: "Green Bowl",
             description:
                 "Restaurant healthy & coloré spécialisé dans les bowls nutritifs, smoothies et salades composées. Idéal pour une pause déjeuner saine et rapide.",
@@ -273,7 +273,7 @@ export const listRestos = () => {
     });
 };
 
-export const getRestoById = (id: string) =>
+export const getRestoById = (id: number) =>
     data.restaurants.find((resto) => {
         return resto.id === id;
     });
